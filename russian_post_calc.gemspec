@@ -4,8 +4,8 @@ require File.expand_path('../lib/russian_post_calc/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Victor Zagorski"]
   gem.email         = ["victor@zagorski.ru"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Calculates delivery price for russian post.}
+  gem.summary       = %q{Calculates delivery price for russian post.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -14,4 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "russian_post_calc"
   gem.require_paths = ["lib"]
   gem.version       = RussianPostCalc::VERSION
+
+  gem.add_dependency "activesupport"
+  gem.add_dependency "nokogiri"
 end

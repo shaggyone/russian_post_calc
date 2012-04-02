@@ -1,6 +1,6 @@
 # RussianPostCalc
 
-TODO: Write a gem description
+Calculates delivery price for russian post.
 
 ## Installation
 
@@ -18,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create your calculator class
+    $ class YourClass
+    $   include RussianPostCalc
+    $ end
+
+Calculate using:
+    $ YourClass.calculate_delivery_price "<FROM_INDEX>", "<TO_INDEX>", <WEIGHT>
+or
+    $ YourClass.calculate_delivery_price "<FROM_INDEX>", "<TO_INDEX>", <WEIGHT>, <DECLARED_VALUE>
 
 ## Contributing
 
